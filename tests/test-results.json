@@ -1,0 +1,24 @@
+{
+  "runAt": "2026-10-30T12:11:26+03:00",
+  "environment": "Local browser run against file:///D:/ID-BRIDGE-UGANDA/index.html",
+  "summary": {
+    "pass": 8,
+    "fail": 4,
+    "tested": 12,
+    "total": 12
+  },
+  "results": [
+    { "id": "TC01", "status": "PASS", "actual": "Home page opened with the expected IDBridge UG title." },
+    { "id": "TC02", "status": "PASS", "actual": "Missing-ID guidance appeared after selecting the problem." },
+    { "id": "TC03", "status": "PASS", "actual": "Collection guidance and collection instructions appeared." },
+    { "id": "TC04", "status": "PASS", "actual": "Verification guidance mentioned the provider and official support." },
+    { "id": "TC05", "status": "PASS", "actual": "Rejection-specific guidance appeared." },
+    { "id": "TC06", "status": "PASS", "actual": "Renewal, replacement and correction guidance appeared." },
+    { "id": "TC07", "status": "FAIL", "actual": "No form or empty-submit validation surface exists in the MVP." },
+    { "id": "TC08", "status": "FAIL", "actual": "No free-text input surface exists, so unexpected-input handling is not implemented or testable." },
+    { "id": "TC09", "status": "PASS", "actual": "Selecting Luganda changed the primary heading to Luganda content." },
+    { "id": "TC10", "status": "PASS", "actual": "The 375px mobile viewport had no horizontal overflow." },
+    { "id": "TC11", "status": "FAIL", "actual": "No admin authentication or authorization surface exists in the MVP." },
+    { "id": "TC12", "status": "FAIL", "actual": "No admin publishing workflow or audit-log implementation exists in the MVP." }
+  ]
+}

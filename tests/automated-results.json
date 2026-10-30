@@ -1,0 +1,10 @@
+{
+  "runCommand": "npm test",
+  "runner": "Vitest",
+  "summary": {
+    "pass": 7,
+    "fail": 0,
+    "tested": 7
+  },
+  "result": "1 TypeScript test file passed; 7 tests passed."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "TC01",
+    "name": "Home page opens",
+    "type": "browser",
+    "expected": "The page title contains IDBridge UG and the home page is visible."
+  },
+  {
+    "id": "TC02",
+    "name": "Registered but no ID",
+    "type": "browser",
+    "expected": "Selecting the missing-ID problem displays delayed-ID guidance."
+  },
+  {
+    "id": "TC03",
+    "name": "Collection point guidance",
+    "type": "browser",
+    "expected": "Selecting the collection problem displays safe collection instructions."
+  },
+  {
+    "id": "TC04",
+    "name": "Verification failure",
+    "type": "browser",
+    "expected": "Selecting verification displays provider and official-support guidance."
+  },
+  {
+    "id": "TC05",
+    "name": "Rejected application",
+    "type": "browser",
+    "expected": "Selecting rejection displays rejection-specific next steps."
+  },
+  {
+    "id": "TC06",
+    "name": "Renewal guidance",
+    "type": "browser",
+    "expected": "Selecting renewal displays renewal, replacement and correction guidance."
+  },
+  {
+    "id": "TC07",
+    "name": "Empty form validation",
+    "type": "browser",
+    "expected": "Submitting an empty form displays a clear validation message."
+  },
+  {
+    "id": "TC08",
+    "name": "Unexpected input handling",
+    "type": "browser",
+    "expected": "Unexpected text is handled safely without an error or unsafe rendering."
+  },
+  {
+    "id": "TC09",
+    "name": "Language switching",
+    "type": "browser",
+    "expected": "Switching to Luganda changes the primary heading to Luganda content."
+  },
+  {
+    "id": "TC10",
+    "name": "Mobile layout",
+    "type": "browser",
+    "expected": "At 375px viewport width, the page has no horizontal overflow."
+  },
+  {
+    "id": "TC11",
+    "name": "Unauthorized guide editing denied",
+    "type": "security",
+    "expected": "An unauthorised user cannot edit or publish a guide."
+  },
+  {
+    "id": "TC12",
+    "name": "Authorised update and audit log",
+    "type": "security",
+    "expected": "An authorised update is saved and an audit event is recorded."
+  }
+]

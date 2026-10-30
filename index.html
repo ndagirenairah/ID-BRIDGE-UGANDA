@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="IDBridge UG helps citizens understand their next step when they have a National ID service problem."
+    />
+    <title>IDBridge UG | Your next step, made clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="IDBridge UG home">
+        <span class="brand-mark" aria-hidden="true">ID</span>
+        <span>IDBridge <strong>UG</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#assistant">Find help</a>
+        <a href="#knowledge">Knowledge centre</a>
+        <a href="#next-steps">My next steps</a>
+      </nav>
+      <label class="language-picker" title="Choose your language">
+        <span class="language-label" aria-hidden="true">🌐</span>
+        <span class="sr-only">Choose your language</span>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="lg">Luganda (Luganda)</option>
+          <option value="sw">Kiswahili (Kiswahili)</option>
+        </select>
+      </label>
+    </header>
+
+    <main id="top">
+      <section class="hero page-width">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Independent citizen support</p>
+          <h1>Your next step<br /><em>made clear.</em></h1>
+          <p class="hero-lede">
+            Clear help for National ID services in Uganda.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#assistant">Find guidance <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#about">How IDBridge works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="privacy-note"><span aria-hidden="true">◌</span> No account needed</p>
+        </div>
+        <div class="hero-illustration" aria-label="Illustration of a person finding their way">
+          <div class="sun"></div>
+          <div class="path path-one"></div>
+          <div class="path path-two"></div>
+          <div class="person"><span></span></div>
+          <div class="sign sign-one">NEXT<br />STEP</div>
+          <div class="sign sign-two">HELP<br />HERE</div>
+          <div class="illustration-label">Clear guidance.<br /><strong>Less confusion.</strong></div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="page-width trust-items">
+          <span>For citizens</span>
+          <span>Plain language</span>
+          <span>Official sources</span>
+          <span>Mobile friendly</span>
+        </div>
+      </section>
+
+      <section id="assistant" class="section page-width">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Smart problem assistant</p>
+            <h2>What problem are you facing?</h2>
+          </div>
+            <p>Choose a problem to see your next step.</p>
+        </div>
+        <div class="assistant-layout">
+          <div class="problem-grid" id="problem-grid">
+            <button class="problem-card" data-problem="missing" type="button">
+              <span class="card-icon" aria-hidden="true">🕒</span>
+              <strong>Registered but never received my ID</strong>
+              <span>I registered but have not received it.</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="problem-card" data-problem="collection" type="button">
+              <span class="card-icon" aria-hidden="true">📍</span>
+              <strong>I need to collect my ID</strong>
+              <span>I need to know where to go.</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="problem-card" data-problem="renewal" type="button">
+              <span class="card-icon" aria-hidden="true">🔄</span>
+              <strong>I need to renew or replace my ID</strong>
+              <span>My ID is lost, damaged or out of date.</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="problem-card" data-problem="verification" type="button">
+              <span class="card-icon" aria-hidden="true">✅</span>
+              <strong>My ID cannot be verified</strong>
+              <span>A service provider could not check it.</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="problem-card" data-problem="rejected" type="button">
+              <span class="card-icon" aria-hidden="true">⚠️</span>
+              <strong>My application was rejected</strong>
+              <span>I need to know why and what to do next.</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="problem-card" data-problem="other" type="button">
+              <span class="card-icon" aria-hidden="true">❓</span>
+              <strong>I have another problem</strong>
+              <span>I need help with another problem.</span>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+          <aside class="assistant-panel" id="assistant-panel" aria-live="polite">
+            <div class="panel-placeholder">
+              <span class="panel-number">01</span>
+              <p>Choose the situation that best matches your problem.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="knowledge" class="section section-tinted">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Knowledge centre</p>
+              <h2>Understand the process.</h2>
+            </div>
+            <a class="text-link" href="#knowledge">View all guides <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="knowledge-grid">
+            <article class="knowledge-card featured-card">
+              <p class="card-category">Start here</p>
+              <h3>How National ID services work</h3>
+              <p>A simple overview of registration, renewal, collection and checking your ID.</p>
+              <a href="#about" class="card-link">Read the guide <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="knowledge-card">
+              <p class="card-category">Common questions</p>
+              <h3>What to do when your ID is delayed</h3>
+              <p>Prepare your references and follow up through the right official channel.</p>
+              <a href="#assistant" class="card-link">Read the guide <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="knowledge-card">
+              <p class="card-category">Stay safe</p>
+              <h3>Protect yourself from unofficial payments</h3>
+              <p>Know what to confirm before travelling and where to report concerns.</p>
+              <a href="#about" class="card-link">Read the guide <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+          <p class="source-note"><span aria-hidden="true">●</span> Every guide is checked against official information and a review date. We do not check your personal application.</p>
+        </div>
+      </section>
+
+      <section id="learn" class="section learn-section">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / Learn from NIRA</p>
+              <h2>Watch official guidance.</h2>
+            </div>
+            <a class="text-link" href="https://www.youtube.com/@NIRA_Ug" target="_blank" rel="noopener">Visit NIRA on YouTube <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="learn-intro">We share links to NIRA’s official channel so you can learn from the source. If a video cannot be shown here, you can still watch it on YouTube.</p>
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-placeholder" role="img" aria-label="Video placeholder for NIRA registration guidance"><span class="play-icon" aria-hidden="true">▶</span></div>
+              <p class="card-category">Registration</p>
+              <h3>NIRA registration guidance</h3>
+              <a class="card-link" href="https://www.youtube.com/@NIRA_Ug" target="_blank" rel="noopener">Watch on official channel <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="video-card">
+              <div class="video-placeholder" role="img" aria-label="Video placeholder for NIRA renewal guidance"><span class="play-icon" aria-hidden="true">▶</span></div>
+              <p class="card-category">Renewal</p>
+              <h3>Renewal and replacement guidance</h3>
+              <a class="card-link" href="https://www.youtube.com/@NIRA_Ug" target="_blank" rel="noopener">Watch on official channel <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="video-card">
+              <div class="video-placeholder" role="img" aria-label="Video placeholder for NIRA service guidance"><span class="play-icon" aria-hidden="true">▶</span></div>
+              <p class="card-category">Service updates</p>
+              <h3>Latest information from NIRA</h3>
+              <a class="card-link" href="https://www.youtube.com/@NIRA_Ug" target="_blank" rel="noopener">Watch on official channel <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+          <p class="source-note"><span aria-hidden="true">●</span> Video links are provided for learning. Always check the date and follow the newest official instructions.</p>
+        </div>
+      </section>
+
+      <section id="next-steps" class="section page-width next-steps-section">
+        <div class="next-steps-copy">
+          <p class="eyebrow">03 / My next steps</p>
+          <h2>Take your checklist with you.</h2>
+          <p>Keep track of your next steps in your browser. Nothing is saved to an account.</p>
+          <button class="button button-dark" id="add-checklist" type="button">Build my checklist <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="checklist" id="checklist">
+          <div class="checklist-header"><span>YOUR CHECKLIST</span><span id="checklist-count">0 / 3 done</span></div>
+          <div id="checklist-items"></div>
+          <p class="checklist-empty" id="checklist-empty">Your private, in-browser checklist will appear here.</p>
+        </div>
+      </section>
+
+      <section id="official-services" class="section official-section">
+        <div class="page-width official-layout">
+          <div>
+            <p class="eyebrow">04 / Official services</p>
+            <h2>Go to the right source.</h2>
+            <p class="official-intro">IDBridge helps you prepare. Use official NIRA channels for status checks, appointments, records and case-specific decisions.</p>
+            <p class="api-boundary"><span aria-hidden="true">🔒</span> IDBridge cannot see your private NIRA information. For application updates and ID checks, use the official NIRA services below.</p>
+          </div>
+          <div class="official-links">
+            <a data-official-link="NIRA official website" href="https://www.nira.go.ug/" target="_blank" rel="noopener">NIRA official website <span aria-hidden="true">↗</span></a>
+            <a data-official-link="NIRA contact and offices" href="https://www.nira.go.ug/contact-us" target="_blank" rel="noopener">Contact and offices <span aria-hidden="true">↗</span></a>
+            <a data-official-link="NIRA appointment system" href="https://servicebooking.nira.go.ug/" target="_blank" rel="noopener">Appointment system <span aria-hidden="true">↗</span></a>
+            <a href="tel:0800211700">Toll-free: 0800 211 700 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="page-width contact-layout">
+          <div>
+            <p class="eyebrow">05 / Contact and feedback</p>
+            <h2>Help us make guidance better.</h2>
+            <p>For a service issue, use the appropriate official NIRA channel above. For feedback about IDBridge itself, tell us whether the guidance was clear and what language or accessibility support you needed.</p>
+          </div>
+          <a class="button button-primary" href="mailto:hello@idbridge.ug">Send us feedback <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section id="security" class="section security-section">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">06 / Stay safe</p>
+                <h2>Keep your information safe.</h2>
+            </div>
+            <p>Simple reminders to help keep you safe.</p>
+          </div>
+          <div class="security-grid">
+            <label class="security-card"><input type="checkbox" /><span class="security-severity high">IMPORTANT</span><strong>Check the website address</strong><small>Use the real IDBridge and NIRA websites before sharing information or paying money.</small></label>
+            <label class="security-card"><input type="checkbox" /><span class="security-severity high">IMPORTANT</span><strong>Check the information</strong><small>Look for official sources and the date the guidance was last checked.</small></label>
+            <label class="security-card"><input type="checkbox" /><span class="security-severity high">IMPORTANT</span><strong>Protect your messages</strong><small>Do not send your personal number, ID photo or one-time code to strangers.</small></label>
+            <label class="security-card"><input type="checkbox" /><span class="security-severity critical">IMPORTANT</span><strong>Do not share passwords</strong><small>We will never ask for your password, one-time code or fingerprints.</small></label>
+            <label class="security-card"><input type="checkbox" /><span class="security-severity medium">REMINDER</span><strong>Save official contacts</strong><small>If this website is unavailable, use the official NIRA contact details.</small></label>
+          </div>
+        </div>
+      </section>
+
+      <section id="trust" class="section trust-section">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">07 / Our trust and transparency</p>
+              <h2>Know who you are using.</h2>
+            </div>
+            <p>We want you to understand what IDBridge is, where our information comes from and what we do not do.</p>
+          </div>
+          <div class="trust-grid">
+            <article><span class="trust-icon" aria-hidden="true">👥</span><h3>Who we are</h3>            <p>IDBridge is an independent citizen guidance project. We are not the official NIRA website.</p></article>
+            <article><span class="trust-icon" aria-hidden="true">🔗</span><h3>Our sources</h3><p>Guides show their official source, link, review date, reviewer and version.</p></article>
+            <article><span class="trust-icon" aria-hidden="true">🛡️</span><h3>Our privacy promise</h3><p>Guidance does not require your personal number, ID photo, fingerprints, one-time code or password.</p></article>
+            <article><span class="trust-icon" aria-hidden="true">🧪</span><h3>Testing and reliability</h3><p>Our current automated suite has 7 passed and 0 failed tests. Security review and user pilot results are not yet complete.</p></article>
+          </div>
+          <div class="trust-note"><strong>See something wrong?</strong> Please check the official NIRA source before acting. You can also <a href="mailto:hello@idbridge.ug">tell us about an incorrect guide</a>. Do not include your personal number or ID documents.</div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="page-width about-content">
+          <p class="eyebrow">A helpful distinction</p>
+          <h2>We make the path clearer.<br /><em>Official institutions resolve the case.</em></h2>
+          <p>IDBridge is independent. We do not issue IDs, see NIRA records or ask for private information.</p>
+          <a class="button button-light" href="#knowledge">Learn about our sources <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-content">
+        <div>
+          <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">ID</span><span>IDBridge <strong>UG</strong></span></a>
+          <p>Clear help for your next step.</p>
+        </div>
+        <div class="footer-links"><a href="#about">About</a><a href="/trust.html">Trust</a><a href="#learn">NIRA videos</a><a href="#official-services">Official services</a><a href="#security">Stay safe</a><a href="#contact">Contact</a></div>
+        <p class="footer-small">Information last reviewed: October 2026</p>
+      </div>
+    </footer>
+    <script type="module" src="/app.ts"></script>
+  </body>
+</html>
